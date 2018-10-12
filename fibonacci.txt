@@ -1,0 +1,11 @@
+void fibonacci(int a)
+{
+	int v[a], i=2;
+	v[0]=1;
+	v[1]=1;
+	v[i]=v[i-1]+v[i-2];
+	i++;
+	fibonacci(i);
+	if(i==a)
+		return v[i];
+}
